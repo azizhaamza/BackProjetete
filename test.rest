@@ -1,0 +1,65 @@
+POST http://127.0.0.1:8000/login
+content-Type: application/json
+
+{"username":"aziz6", "password":"Pass1234"}
+
+####
+POST http://127.0.0.1:8000/dem
+content-Type: application/json
+
+{
+    "nom": "aziz",
+    "prenom": "hamza",
+    "date_aller": "2023-09-03",
+    "date_retour": "2023-09-11",
+    "sujet_mission": "forage",
+    "plan": "pdg",
+    "accompagnant": "aaaa nnn llll ooo ",
+    "reponse_admin": "false",
+    
+}
+####
+#####
+
+POST  http://127.0.0.1:8000/accept_demand/5
+content-Type: application/json
+##########
+#####
+
+GET  http://127.0.0.1:8000/show/1
+content-Type: application/json
+##########
+
+GET  http://127.0.0.1:8000/edit/3
+content-Type: application/json
+####
+
+PUT http://127.0.0.1:8000/update/3
+content-Type: application/json
+
+{"reponse_admin":"true"}
+
+####
+DELETE  http://127.0.0.1:8000/delete/2
+content-Type: application/json
+
+{"nom":"aziz1","prenom":"hamza1","plan":"aaaa1","date_aller":"2023-09-01","date_retour":"2023-09-19","sujet_mission":"hdshshdhszd","accompagnant":"bbbbbbbbb","reponse_admin":"false"}
+
+####
+POST http://127.0.0.1:8000/signup
+content-Type: application/json
+
+{"username":"aziz6", "password":"Pass1234","email": "zack2@gmail.com","is_staff": true}
+
+
+#####
+
+
+GET  http://127.0.0.1:8000/test_token
+content-Type: application/json
+Authorization: Token 53b5580961a4f2670021dfb9451e26c16eb8797d
+
+#####
+
+GET  http://127.0.0.1:8000/users
+content-Type: application/json
